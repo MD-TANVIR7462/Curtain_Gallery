@@ -15,7 +15,7 @@ import Slidercart from "./Slidercart";
 
 
 const Slider = () => {
-    const [data,setData]=useState(null) 
+    const [curtains, setCurtains] = useState([]);
   const [setSwiperRef] = useState(null);
   const [slidesPerView, setSlidesPerView] = useState(3);
   const [Space, setSpace] = useState(40);
@@ -42,15 +42,22 @@ const Slider = () => {
   }, []);
 
 
-useEffect(()=>{
-    fetch("../../../public/Images.json")
-    .then(res=>res.json())
-    .then(data=>setData(data))
-},[])
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch('/Images.json');
+        const data = await response.json();
+        setCurtains(data);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+
+    fetchData();
+  }, []);
 
 
-
-console.log(data);
+console.log(curtains);
   return (
     <>
     <p className="text-3xl md:text-5xl text-center mt-16 md:mt-20 mb-5 md:mb-8 underline">OUR PRODUCTS</p>
@@ -68,7 +75,7 @@ console.log(data);
           modules={[Pagination, Navigation]}
           className="mySwiper "
         >
-          {data?.map((product) => (
+          {curtains.map((product) => (
             <SwiperSlide key={product._id}>
               <Slidercart product={product} key={product._id}></Slidercart>
             </SwiperSlide>

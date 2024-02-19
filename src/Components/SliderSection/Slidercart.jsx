@@ -34,9 +34,9 @@ const Slidercart = ({ product }) => {
         <span>
           <p className="text-sm md:text-lg text-white font-light">{name}</p>
         
-          <p className="md:text-xl text-[#168a73]">
-            {} <span className="text-[#168a73]font-semibold">free delivery</span>
-          </p>
+          {/* <p className="md:text-xl text-[#168a73]">
+            {} <span className="text-[#168a73]font-semibold"><span className="font-bold">Instalation Charge</span> : 50 AED per window </span>
+          </p> */}
         </span>
         <a
         //   onClick={() => openModal(url, name)}
