@@ -1,7 +1,10 @@
 import { AiFillMail, AiFillPhone, AiFillInfoCircle } from "react-icons/ai";
 const AboutPage = () => {
   return (
-    <div className="my-8  md:my-20 p-4 md:p-12 bg-base-200 shadow-2xl md:w-[90%] md:flex justify-around mx-auto items-center">
+   <>
+    <p className="text-3xl md:text-5xl text-center mt-8 mb-4 md:mt-12 md:mb-8  underline">ABOUT US</p>
+    <div className="mb-8  md:mb-20 p-4 md:p-12 bg-base-200 shadow-2xl md:w-[90%] md:flex justify-around mx-auto items-center">
+      
       <div className="mb-5 md:mb-0">
         <p className="text-lg md:text-4xl font-bold mb-1">GET IN TOUCH</p>
         <h1 className="text-xs md:text-sm  font-medium mb-4 md:mb-5">
@@ -31,7 +34,7 @@ const AboutPage = () => {
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
-    </div>
+    </div></>
   );
 };
 
