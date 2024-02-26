@@ -11,13 +11,13 @@ const AboutPage = () => {
           Visit Our Instagram page For More Updates....{" "}
         </h1>
         <p className=" md:text-lg font-bold  mb-1">Head office</p>
-        <p className="flex items-center text-sm md:text-md gap-2 md:gap-4 font-semibold text-gray-600">
+        <p className="flex items-center text-sm md:text-md gap-2 md:gap-4 font-semibold text-white">
           <AiFillMail className="text-yellow-700" /> saifuddin_rubel@yahoo.com
         </p>
-        <p className="flex items-center text-sm md:text-md gap-2 md:gap-4 font-semibold text-gray-600 py-2">
+        <p className="flex items-center text-sm md:text-md gap-2 md:gap-4 font-semibold text-white py-2">
           <AiFillPhone className="text-green-500" /> (+971)558272925
         </p>
-        <p className="flex items-center text-sm md:text-md gap-2 md:gap-4 font-semibold text-gray-600">
+        <p className="flex items-center text-sm md:text-md gap-2 md:gap-4 font-semibold text-white">
           <AiFillInfoCircle className="text-blue-500" /> 24 Hours Support
         </p>
       </div>

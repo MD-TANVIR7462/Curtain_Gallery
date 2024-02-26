@@ -38,12 +38,12 @@ const Slidercart = ({ product }) => {
             {} <span className="text-[#168a73]font-semibold"><span className="font-bold">Instalation Charge</span> : 50 AED per window </span>
           </p> */}
         </span>
-        <a
-        //   onClick={() => openModal(url, name)}
+        {/* <a
+          onClick={() => openModal(url, name)}
           className="btn btn-outline btn-xs mr-2"
         >
        Details
-        </a>
+        </a> */}
       </div>
       {/* modal */}
       {/* {isOpen && (

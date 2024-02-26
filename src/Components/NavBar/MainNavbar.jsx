@@ -1,7 +1,7 @@
 import { Navbar } from "keep-react";
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-
+// import { Link } from "react-router-dom";
+import { Link } from 'react-scroll';
 
 const MainNavbar = () => {
 
@@ -28,21 +28,21 @@ const MainNavbar = () => {
   const navitems = (
     <>
     <Navbar.Divider></Navbar.Divider>
-      <Link >
+      <Link to="products" smooth={true} duration={500}  offset={-200} >
         <p className=" text-white cursor-pointer py-2  lg:my-5 px-1 lg:text-xl  ease-linear   hover:bg-white rounded-sm  hover:scale-90  transition-transform duration-500  lg:py-[1dvh] hover:text-black  lg:px-[3dvw] hover:font-semibold ">
        Products
         </p>
       </Link>
 
       <Navbar.Divider></Navbar.Divider>
-      <Link >
+      <Link  to="gallery" smooth={true} duration={500} >
         <p className=" text-white cursor-pointer py-2 px-1  lg:text-xl  ease-linear  hover:bg-white rounded-sm hover:scale-90  transition-transform duration-500 lg:py-[1dvh] hover:text-black  lg:px-[3dvw] hover:font-semibold ">
-        Gellary
+        Gallery
         </p>
       </Link>
 
       <Navbar.Divider></Navbar.Divider>
-      <Link >
+      <Link to="about" smooth={true} duration={500} offset={-100} >
         <p className=" text-white cursor-pointer py-2 px-1  lg:text-xl   ease-linear hover:bg-white rounded-sm hover:scale-90  transition-transform duration-500 lg:py-[1dvh] hover:text-black  lg:px-[3dvw] hover:font-semibold ">
         About Us
         </p>
@@ -57,7 +57,7 @@ const MainNavbar = () => {
     <Navbar
       collapseType={true}
       fluid={true} 
-      className={`lg:fixed lg:top-0    w-full scroll-auto transition-transform bg-black  z-10 lg:bg-white  lg:bg-opacity-5    lg:backdrop-blur-sm 
+      className={`fixed top-0    w-full scroll-auto transition-transform bg-[#2f2d31]  z-10 lg:bg-white  lg:bg-opacity-5    lg:backdrop-blur-sm 
       ${isScrolled?'lg:bg-opacity-25  lg:bg-black lg:backdrop-blur-md  lg:text-white shadow-md':"lg:bg-opacity-[2px]"} `}
 
      
@@ -73,7 +73,7 @@ const MainNavbar = () => {
           >
             {navitems}
           </Navbar.Container>
-          <Navbar.Collapse collapseType="sidebar" className="bg-black">
+          <Navbar.Collapse collapseType="sidebar" className="bg-[#2f2d31] bg-opacity-35 backdrop-blur-lg">
             <Navbar.Container tag="ul" className="flex flex-col  ">
               {navitems}
             </Navbar.Container>
@@ -81,7 +81,7 @@ const MainNavbar = () => {
         </Navbar.Container>
 
         <Navbar.Container className="flex gap-2">
-          <span className="lg:hidden p-1 !text-white bg-white rounded-sm">
+          <span className="lg:hidden p-1 !text-white bg-white rounded-sm ">
             <Navbar.Toggle />
           </span>
         </Navbar.Container>
