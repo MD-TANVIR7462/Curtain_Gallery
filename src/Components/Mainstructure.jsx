@@ -6,6 +6,7 @@ import MainNavbar from "./NavBar/MainNavbar";
 import Slider from "./SliderSection/Slider";
 import { Element } from "react-scroll";
 import Gallery from "./Gellarysection/Gallery";
+import Feature from "./FeatureSection/Feature";
 const Mainstructure = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -24,11 +25,14 @@ const Mainstructure = () => {
         <Slider></Slider>
       </Element>
       <Element name="gallery">
-     <Gallery></Gallery>
+        <Gallery></Gallery>
       </Element>
+      <Feature></Feature>
       <Element name="about">
         <AboutPage></AboutPage>
       </Element>
+
+    
       <Footer></Footer>
     </div>
   );
