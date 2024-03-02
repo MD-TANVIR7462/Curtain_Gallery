@@ -25,7 +25,14 @@ const Slider = () => {
       if (window.innerWidth <= 768) {
         setSlidesPerView(1); // Show only 1 slide on phone devices
         setSpace(50);
-      } else {
+      }
+      else if(window.innerWidth <= 1000){
+        setSlidesPerView(2); // Show only 1 slide on phone devices
+        setSpace(30);
+
+      }
+      
+      else {
         setSlidesPerView(3); // Show 3 slides on other devices
         setSpace(40);
       }

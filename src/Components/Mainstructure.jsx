@@ -5,27 +5,29 @@ import Footer from "./Footer";
 import MainNavbar from "./NavBar/MainNavbar";
 import Slider from "./SliderSection/Slider";
 import { Element } from "react-scroll";
+import Gallery from "./Gellarysection/Gallery";
 const Mainstructure = () => {
-  
-
   useEffect(() => {
-    window.scrollTo(0, 0); 
-  }, []); 
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <MainNavbar></MainNavbar>
       <Element name="home">
-      <Benner
-        name="Curtain Gallery"
-        subtitle="Discover exquisite window treatments at Curtain Gallery. Explore our curated collection for timeless elegance and personalized style."
-        img="https://i.ibb.co/8NDWRWZ/beautiful-vintage-curtain-background.jpg"
-      ></Benner>
-        </Element>
+        <Benner
+          name="Curtain Gallery"
+          subtitle="Discover exquisite window treatments at Curtain Gallery. Explore our curated collection for timeless elegance and personalized style."
+          img="https://i.ibb.co/8NDWRWZ/beautiful-vintage-curtain-background.jpg"
+        ></Benner>
+      </Element>
       <Element name="products">
         <Slider></Slider>
       </Element>
+      <Element name="gallery">
+     <Gallery></Gallery>
+      </Element>
       <Element name="about">
-      <AboutPage></AboutPage>
+        <AboutPage></AboutPage>
       </Element>
       <Footer></Footer>
     </div>
@@ -33,4 +35,3 @@ const Mainstructure = () => {
 };
 
 export default Mainstructure;
-

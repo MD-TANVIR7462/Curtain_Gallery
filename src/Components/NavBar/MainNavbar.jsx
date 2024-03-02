@@ -1,10 +1,9 @@
 import { Navbar } from "keep-react";
 import { useEffect, useState } from "react";
 // import { Link } from "react-router-dom";
-import { Link } from 'react-scroll';
+import { Link } from "react-scroll";
 
 const MainNavbar = () => {
-
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -24,44 +23,42 @@ const MainNavbar = () => {
     };
   }, []);
 
-
   const navitems = (
     <>
-    <Navbar.Divider></Navbar.Divider>
-      <Link to="products" smooth={true} duration={500}  offset={-200} >
+      <Navbar.Divider></Navbar.Divider>
+      <Link to="products" smooth={true} duration={500} offset={-200}>
         <p className=" text-white cursor-pointer py-2  lg:my-5 px-1 lg:text-xl  ease-linear   hover:bg-white rounded-sm  hover:scale-90  transition-transform duration-500  lg:py-[1dvh] hover:text-black  lg:px-[3dvw] hover:font-semibold ">
-       Products
+          Products
         </p>
       </Link>
 
       <Navbar.Divider></Navbar.Divider>
-      <Link  to="gallery" smooth={true} duration={500} >
+      <Link to="gallery" smooth={true} duration={500} offset={-100}>
         <p className=" text-white cursor-pointer py-2 px-1  lg:text-xl  ease-linear  hover:bg-white rounded-sm hover:scale-90  transition-transform duration-500 lg:py-[1dvh] hover:text-black  lg:px-[3dvw] hover:font-semibold ">
-        Gallery
+          Gallery
         </p>
       </Link>
 
       <Navbar.Divider></Navbar.Divider>
-      <Link to="about" smooth={true} duration={500} offset={-100} >
+      <Link to="about" smooth={true} duration={500} offset={-100}>
         <p className=" text-white cursor-pointer py-2 px-1  lg:text-xl   ease-linear hover:bg-white rounded-sm hover:scale-90  transition-transform duration-500 lg:py-[1dvh] hover:text-black  lg:px-[3dvw] hover:font-semibold ">
-        About Us
+          About Us
         </p>
       </Link>
 
       <Navbar.Divider></Navbar.Divider>
-     
     </>
   );
   return (
-    
     <Navbar
       collapseType={true}
-      fluid={true} 
+      fluid={true}
       className={`fixed top-0    w-full scroll-auto transition-transform bg-[#2f2d31]  z-10 lg:bg-white  lg:bg-opacity-5    lg:backdrop-blur-sm 
-      ${isScrolled?'lg:bg-opacity-25  lg:bg-black lg:backdrop-blur-md  lg:text-white shadow-md':"lg:bg-opacity-[2px]"} `}
-
-     
-
+      ${
+        isScrolled
+          ? "lg:bg-opacity-25  lg:bg-black lg:backdrop-blur-md  lg:text-white shadow-md"
+          : "lg:bg-opacity-[2px]"
+      } `}
     >
       <Navbar.Container className="flex items-center  justify-between ">
         <p className="text-white  font-bold pl-3 lg:hidden text-2xl">CURTAIN</p>
@@ -73,7 +70,10 @@ const MainNavbar = () => {
           >
             {navitems}
           </Navbar.Container>
-          <Navbar.Collapse collapseType="sidebar" className="bg-[#2f2d31] bg-opacity-35 backdrop-blur-lg">
+          <Navbar.Collapse
+            collapseType="sidebar"
+            className="bg-[#2f2d31] bg-opacity-35 backdrop-blur-lg"
+          >
             <Navbar.Container tag="ul" className="flex flex-col  ">
               {navitems}
             </Navbar.Container>
