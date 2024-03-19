@@ -61,7 +61,7 @@ const MainNavbar = () => {
       } `}
     >
       <Navbar.Container className="flex items-center  justify-between ">
-        <p className="text-white  font-bold pl-3 lg:hidden text-2xl">CURTAIN</p>
+        <p className="text-white  font-bold pl-3  text-2xl block ">CURTAIN</p>
 
         <Navbar.Container className="flex items-center mx-auto ">
           <Navbar.Container

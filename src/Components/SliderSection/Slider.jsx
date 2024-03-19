@@ -64,10 +64,15 @@ const Slider = () => {
   }, []);
 
 
-console.log(curtains);
+
   return (
     <>
-    <p className="text-3xl md:text-5xl text-center mt-16 md:mt-20 mb-5 md:mb-8 underline">OUR PRODUCTS</p>
+
+    <div>
+        <h2 className="text-3xl font-bold tracki text-center sm:text-5xl dark:text-gray-50 mt-4 mb-4 md:mt-12 md:mb-8">
+Our Products
+        </h2>
+      </div>
     <div className="  mx-auto w-[93%] md:w-[94%] ">
       <div className="">
         <Swiper

@@ -47,7 +47,7 @@ const GalleryCard = () => {
           <p className="text-md  text-md lg:text-2xl font-semibold mt-3">Cafe Curtains</p>
         </div>
       </div>
-      <div className=" bg-[#8682B0] bg-opacity-20 p-2 md:p-4 rounded-md mb-3 md:mb-4 lg:mb-6">
+      <div className=" bg-[#8682B0] bg-opacity-20 p-2 md:p-4 rounded-md mb-3 md:mb-4 lg:mb-6 md:hidden lg:block sm:block">
         <img
           src="https://i.ibb.co/yqgzW0X/window-glass-YCB6-KGMGK0.jpg"
           className="object-cover w-full md:h-[520px] rounded-md"
