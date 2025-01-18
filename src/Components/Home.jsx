@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import AboutPage from "./AboutPage";
 import Benner from "./Benner";
-import Footer from "./Footer";
 
 import Slider from "./SliderSection/Slider";
 import { Element } from "react-scroll";
@@ -31,7 +30,6 @@ const Home = () => {
         <AboutPage></AboutPage>
       </Element>
 
-      <Footer></Footer>
     </div>
   );
 };
