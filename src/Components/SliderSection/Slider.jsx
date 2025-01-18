@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 // Import Swiper React components
+import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -85,6 +86,15 @@ const Slider = () => {
             ))}
           </Swiper>
         </div>
+      </div>
+
+      <div className="text-center mt-[3%]">
+        <Link
+          to="/all-products"
+          className=" bg-transparent cursor-pointer hover:bg-yellow-300 text-yellow-300 hover:text-black rounded shadow hover:shadow-lg py-2 px-4 border border-yellow-300 hover:border-transparent"
+        >
+          All Products
+        </Link>
       </div>
     </div>
   );

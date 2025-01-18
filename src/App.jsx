@@ -1,10 +1,13 @@
-import Mainstructure from "./Components/Mainstructure";
-
+import { Outlet } from "react-router-dom";
+import MainNavbar from "./Components/NavBar/MainNavbar";
+import Footer from "./Components/Footer";
 
 const App = () => {
   return (
     <div>
-      <Mainstructure></Mainstructure>
+      <MainNavbar />
+      <Outlet />
+      <Footer />
     </div>
   );
 };

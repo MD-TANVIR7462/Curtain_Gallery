@@ -1,10 +1,12 @@
 import { Navbar } from "keep-react";
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 // import { Link } from "react-router-dom";
 import { Link } from "react-scroll";
 
 const MainNavbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,26 +24,36 @@ const MainNavbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  const handleNavigate = () => {
+    navigate("/");
+  };
 
   const navitems = (
     <>
       <Navbar.Divider></Navbar.Divider>
+      <li onClick={handleNavigate}>
+        <p className=" text-white cursor-pointer py-1  lg:my-3 px-1 lg:text-xl  ease-linear   hover:bg-white rounded-sm  hover:scale-90  transition-transform duration-500  lg:py-[.5dvh] hover:text-black  lg:px-[3dvw] hover:font-semibold ">
+          Home
+        </p>
+      </li>
+      <Navbar.Divider></Navbar.Divider>
+
       <Link to="products" smooth={true} duration={500} offset={-200}>
-        <p className=" text-white cursor-pointer py-2  lg:my-5 px-1 lg:text-xl  ease-linear   hover:bg-white rounded-sm  hover:scale-90  transition-transform duration-500  lg:py-[1dvh] hover:text-black  lg:px-[3dvw] hover:font-semibold ">
+        <p className=" text-white cursor-pointer py-1  lg:my-3 px-1 lg:text-xl  ease-linear   hover:bg-white rounded-sm  hover:scale-90  transition-transform duration-500  lg:py-[.5dvh] hover:text-black  lg:px-[3dvw] hover:font-semibold ">
           Products
         </p>
       </Link>
 
       <Navbar.Divider></Navbar.Divider>
       <Link to="gallery" smooth={true} duration={500} offset={-100}>
-        <p className=" text-white cursor-pointer py-2 px-1  lg:text-xl  ease-linear  hover:bg-white rounded-sm hover:scale-90  transition-transform duration-500 lg:py-[1dvh] hover:text-black  lg:px-[3dvw] hover:font-semibold ">
+        <p className=" text-white cursor-pointer py-1 px-1  lg:text-xl  ease-linear  hover:bg-white rounded-sm hover:scale-90  transition-transform duration-500 lg:py-[.5dvh] hover:text-black  lg:px-[3dvw] hover:font-semibold ">
           Gallery
         </p>
       </Link>
 
       <Navbar.Divider></Navbar.Divider>
       <Link to="about" smooth={true} duration={500} offset={-100}>
-        <p className=" text-white cursor-pointer py-2 px-1  lg:text-xl   ease-linear hover:bg-white rounded-sm hover:scale-90  transition-transform duration-500 lg:py-[1dvh] hover:text-black  lg:px-[3dvw] hover:font-semibold ">
+        <p className=" text-white cursor-pointer py-1 px-1  lg:text-xl   ease-linear hover:bg-white rounded-sm hover:scale-90  transition-transform duration-500 lg:py-[.5dvh] hover:text-black  lg:px-[3dvw] hover:font-semibold ">
           About Us
         </p>
       </Link>
