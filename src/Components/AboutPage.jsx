@@ -7,7 +7,7 @@ const AboutPage = () => {
      About Us
         </h2>
       </div>
-      <div className="mb-8  md:mb-20 p-4 md:p-12 bg-base-200 shadow-2xl md:w-[90%] md:flex justify-around mx-auto items-center">
+      <div className="max-w-[1900px]  mb-8  md:mb-20 p-4 md:p-12 bg-base-200 shadow-2xl md:w-[90%] md:flex justify-around mx-auto items-center">
         <div className="mb-5 md:mb-0">
           <p className="text-lg md:text-4xl font-bold mb-1">GET IN TOUCH</p>
           <h1 className="text-xs md:text-sm  font-medium mb-4 md:mb-5">

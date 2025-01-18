@@ -2,7 +2,7 @@ const Benner = () => {
   return (
     <section>
       <div className="bg-black  text-white pt-16 pb-8 md:py-20  lg:py-[180px] xl:py-60 ">
-        <div className="col-span-12    my-12 mx-auto grid grid-cols-12   md:justify-items-end justify-items-center lg:justify-items-end xl:justify-items-end  md:my-24 xl:w-[85%] items-center lg:w-[95%] md:w-[90%] w-[90%] ">
+        <div className="col-span-12  max-w-[1900px]   my-12 mx-auto grid grid-cols-12   md:justify-items-end justify-items-center lg:justify-items-end xl:justify-items-end  md:my-24 xl:w-[85%] items-center lg:w-[95%] md:w-[90%] w-[90%] ">
           <div className="col-span-11  md:col-span-5 xl:col-span-4  ">
             <h1 className="text-3xl md:text-3xl lg:text-5xl  text-yellow-300 tracking-loose mb-2">
               CURTAIN GALLERY
