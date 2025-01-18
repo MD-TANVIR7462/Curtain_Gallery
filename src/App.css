@@ -41,3 +41,12 @@
   color: #888;
 }
 
+h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 4rem;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
+  background: linear-gradient(to right, #ff0000, #ffff00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: skewX(-10deg);
+}
